@@ -1,0 +1,46 @@
+# PLAYER STATISTICS
+# CREATED BY CASSIOTDS
+# EDITED BY CASPAR
+# YOU CAN EDIT HOW YOU WANT, JUST DON'T MESS IT UP.
+# IF YOU HAVE ERRORS, MESSAGE CassioTDS#8931 OR Caspar#1647 ON DISCORD.
+# (NO CREDITS ARE GIVEN IN THE OUTPUT.)
+command /playerstats [<player>]:
+	aliases: /ps
+	trigger:
+		if arg 1 is not set:
+			send "&9&m=========&r &c&l&nPERSONAL STATISTICS&r &r&9&m========="
+			send ""
+			send "&b&lIngame Name &r&8» &b%player%"
+			send "&b&lLocation &r&8» &b%player's location%"
+			send "&b&lWorld &r&8» &b%player's world%"
+			send "&b&lGameMode &r&8» &b%player's gamemode%"
+			send "&b&lHealth &r&8» &c%player's health%"
+			send "&b&lHunger &r&8» &6%player's hunger%"
+			send "&b&lLevel &r&8» &b%player's level%"
+			send "&b&lMaximum Health &r&8» &c%player's maximum health%"
+			send "&3&lOyxgen &r&8» &b%player's remaining air%"
+			send "&b&lHolding &r&8» &b%player's tool%"
+			send "&b&lHead Position &r&8» &b%player's head location%"
+			send "&b&lAltitude &r&8» &b%player's altitude%"
+			send "&cSent Message At %now%."
+			send ""
+			send "&9&l&m====================================="
+		else:
+			send "&9&m=========&r &c&l&n%arg 1%'s STATISTICS&r &r&9&m========"
+			send ""
+			send "&b&Ingame Name &r&8» &b%arg 1%"
+			send "&b&lLocation &r&8» &b%arg 1's location%"
+			send "&b&lWorld &r&8» &b%arg 1's world%"
+			send "&b&lGameMode &r&8» &b%arg 1's gamemode%"
+			send "&b&lHealth &r&8» &c%arg 1's health%"
+			send "&b&lHunger &r&8» &6%arg 1's hunger%"
+			send "&b&lLevel &r&8» &b%arg 1's level%"
+			send "&b&lMaximum &r&8» &b%arg 1's maximum health%"
+			send "&3&lOxygen &r&8» &b%arg 1's remaining air%"
+			send "&b&lHolding &r&8» &b%arg 1's tool%"
+			send "&b&lHead Position &r&8» &b%arg 1's head location%"
+			send "&b&lAltitude &r&8» &b%arg 1's altitude%"
+	              send "&b&lDistance &r&8» &5%distance between arg 1 and player%"
+			send "&cSent Message At %now%."
+			send ""
+			send "&9&m&l====================================="
